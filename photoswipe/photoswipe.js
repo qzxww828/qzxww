@@ -35,7 +35,7 @@ strVar += "    <\/div>";
 strVar += "<\/div>";
 
 $("#photo").html(strVar);
-$("#content img").each(function(obj){
+$("#content img:not(#photo)").each(function(obj){
 	$(this).click(function(){
 		toBigPic(obj);
 	})
@@ -47,7 +47,7 @@ function toBigPic(pos) {
 
 	var items = [];
 	var getItems = function() {
-		$("#content img").each(function(){
+		$("#content img:not(#photo)").not("#photo img").each(function(){
 			var image = new Image();
             image.src = $(this).attr("src")||$(this).attr("data-src");
 			var item = {
