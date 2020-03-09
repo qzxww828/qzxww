@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+﻿document.addEventListener('DOMContentLoaded', function () {
     // 设置音频文件名显示宽度
     var element = document.querySelector('.audio-right');
     var maxWidth = window.getComputedStyle(element, null).width;
@@ -44,10 +44,10 @@ function initAudioEvent() {
         if (audio.paused) {
             // 开始播放当前点击的音频
             audio.play();
-            audioPlayer.src = 'pause.png';
+            audioPlayer.src = 'https://cdn.jsdelivr.net/gh/qzxww828/qzxww/audio/pause.png';
         } else {
             audio.pause();
-            audioPlayer.src = 'play.png';
+            audioPlayer.src = 'https://cdn.jsdelivr.net/gh/qzxww828/qzxww/audio/play.png';
         }
     }, false);
 
