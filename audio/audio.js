@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     // 设置音频文件名显示宽度
     var element = document.querySelector('.audio-right');
     var maxWidth = window.getComputedStyle(element, null).width;
@@ -161,7 +161,7 @@ function audioEnded() {
     document.getElementById('progressBar').style.width = 0;
     document.getElementById('progressDot').style.left = 0;
     document.getElementById('audioCurTime').innerText = transTime(0);
-    document.getElementById('audioPlayer').src = 'play.png';
+    document.getElementById('audioPlayer').src = 'https://cdn.jsdelivr.net/gh/qzxww828/qzxww/audio/play.png';
 }
 
 /**
