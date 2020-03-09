@@ -1,0 +1,92 @@
+.audio-wrapper {
+    height: 4.375rem;
+    color: #3e3e3e;
+    display: table;
+    width: 99%;
+    vertical-align: middle;
+    margin: 16.5px auto !important;
+ 	background-color: #fcfcfc;
+    border: 1px solid #e0e0e0;
+}
+
+.audio-left {
+	margin: 0 auto !important;
+	display: table-cell;
+    text-align: center;
+    width: 3.125rem;
+    height: 100%;
+}
+
+.audio-left img {
+    width: 2.5rem;
+    position: relative;
+    top: 0.9375rem;
+    margin: 0;
+    display: initial;   /* 解除与app的样式冲突 */
+    cursor: pointer;
+}
+
+.audio-right {
+	display: table-cell;
+	padding: 0 0.3125rem;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.audio-right p {
+	margin: 0 auto !important;
+    font-size: 0.9375rem;
+    height: 2.125rem;
+
+    /* 歌曲名称只显示在一行，超出部分显示为省略号 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.progress-bar-bg {
+	margin: 0 auto !important;
+    background-color: #d9d9d9;
+    position: relative;
+    height: 0.125rem;
+    cursor: pointer;
+}
+
+.progress-bar {
+	margin: 0 !important;
+    background-color: #649fec;
+    width: 0;
+    height: 0.125rem;
+}
+
+.progress-bar-bg span {
+    content: " ";
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #3e87e8;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -5px;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+.audio-time {
+	margin: 0 auto !important;
+    overflow: hidden;
+   	height: 2.125rem;
+}
+
+.audio-length-total {
+    float: right;
+    font-size:0.75rem;
+}
+
+.audio-length-current {
+    float: left;
+    font-size: 0.75rem;
+}
