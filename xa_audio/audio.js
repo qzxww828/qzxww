@@ -44,10 +44,12 @@ function initAudioEvent() {
         if (audio.paused) {
             // 开始播放当前点击的音频
             audio.play();
-            audioPlayer.src = 'https://cdn.jsdelivr.net/gh/qzxww828/qzxww/xa_audio/pause.png';
+            audioPlayer.style.backgroundImage="url('https://cdn.jsdelivr.net/gh/qzxww828/qzxww/xa_audio/pause.png')";
+            //audioPlayer.src = '';
         } else {
             audio.pause();
-            audioPlayer.src = 'https://cdn.jsdelivr.net/gh/qzxww828/qzxww/xa_audio/play.png';
+         	audioPlayer.style.backgroundImage="url('https://cdn.jsdelivr.net/gh/qzxww828/qzxww/xa_audio/play.png')";
+            //audioPlayer.src = '';
         }
     }, false);
 
@@ -161,7 +163,8 @@ function audioEnded() {
     document.getElementById('progressBar').style.width = 0;
     document.getElementById('progressDot').style.left = 0;
     document.getElementById('audioCurTime').innerText = transTime(0);
-    document.getElementById('audioPlayer').src = 'https://cdn.jsdelivr.net/gh/qzxww828/qzxww/xa_audio/play.png';
+    document.getElementById('audioPlayer').style.backgroundImage="url('https://cdn.jsdelivr.net/gh/qzxww828/qzxww/xa_audio/play.png')";
+    //document.getElementById('audioPlayer').src = 'https://cdn.jsdelivr.net/gh/qzxww828/qzxww/xa_audio/play.png';
 }
 
 /**

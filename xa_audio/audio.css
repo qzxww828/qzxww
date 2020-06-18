@@ -1,4 +1,4 @@
-﻿.audio-wrapper {
+.audio-wrapper {
     height: 4.375rem;
     color: #3e3e3e;
     display: table;
@@ -17,13 +17,18 @@
     height: 100%;
 }
 
-.audio-left img {
+.audio-left .audioPlayer{
     width: 2.5rem;
+    height: 2.5rem;
     position: relative;
     top: 0.9375rem;
     margin: 0;
     display: initial;   /* 解除与app的样式冲突 */
     cursor: pointer;
+    background-image: url("https://cdn.jsdelivr.net/gh/qzxww828/qzxww/xa_audio/play.png");
+    background-size: 100% 100%;
+    display: block;
+    left:0.3125rem;
 }
 
 .audio-right {
@@ -54,7 +59,7 @@
 
 .progress-bar {
 	margin: 0 !important;
-    background-color: #649fec;
+    background:-webkit-linear-gradient(left, rgb(36, 174, 236),rgb(4, 209, 220));
     width: 0;
     height: 0.125rem;
 }
